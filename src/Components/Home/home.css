@@ -1,0 +1,28 @@
+.dog{
+    margin-top: 20px;
+    margin-left: 20%;
+    width: 200px;
+}
+
+.principal{
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.menu{
+    background-color: #F5E580;
+    font-size: 40px;
+    text-align: center;
+    padding: 8px;
+}
+
+.iconHome{
+    margin-right: 2rem;
+}
+
+.iconCar{
+    margin-left: 2rem;
+}
+
+

@@ -1,0 +1,27 @@
+.header{
+    background-color: #f1ce0a8e;
+    padding: 20px;
+}
+
+
+.Principal{
+    text-align:center;
+    font-size: 20px; 
+    margin-top: -60px;
+    margin-left: 20px;
+}
+
+.logocook{
+ margin-top:-10px;
+ width: 70px;
+}
+
+.contacts{
+    float: right ;
+    margin: 10px;
+    margin-top: -5px;
+    border-radius: 20px;
+    color: #000;
+    background-color:#F0EEE2;
+}
+
