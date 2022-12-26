@@ -1,15 +1,17 @@
 .footer{
     background-color:#F5E580;
     margin-top: 10px;
+    padding: 8px;
 }
 
 .sloganFooter{
     font-size: 15px;
     text-align: center;
+    margin: 0 0 15px;
 }
 
 .contact{
     font-size: 25px;
     text-align: center;
-    margin-top: -5px;
+    margin-top: -12px;
 }

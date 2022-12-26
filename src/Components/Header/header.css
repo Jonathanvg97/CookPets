@@ -12,8 +12,8 @@
 }
 
 .logocook{
- margin-top:-10px;
- width: 70px;
+    margin-top:-10px;
+    width: 60px;
 }
 
 .contacts{
@@ -23,5 +23,10 @@
     border-radius: 20px;
     color: #000;
     background-color:#F0EEE2;
+    font-size: 10px;
+}
+
+.contacts:hover{
+    background-color: #f8e800;
 }
 

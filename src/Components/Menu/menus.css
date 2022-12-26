@@ -1,0 +1,133 @@
+.menu {
+  left: 0;
+  right: 0;
+  position: sticky;
+  background-color: #f5e580;
+  font-size: 40px;
+  text-align: center;
+  bottom: 0px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.opcions {
+  border-radius: 20px;
+  vertical-align: center;
+  justify-content: center;
+  height: 60px;
+  padding: auto;
+}
+
+.opcions:hover {
+  background-color: #f8e14e;
+}
+
+.images {
+  height: 240px;
+  border-radius: 20px;
+}
+
+.Cabecera {
+  width: auto;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+}
+
+.Cabecera-button {
+  display: none;
+  cursor: pointer;
+}
+
+.Cabecera-ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.Cabecera-li {
+  margin: 0 1rem;
+  list-style: none;
+}
+.Cabecera-li > .href {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #000;
+}
+@media screen and (max-width: 480px) {
+  .Cabecera-button {
+    display: flex;
+    justify-content: flex-start;
+    background: center;
+    outline: none;
+    border: none;
+  }
+
+  .Back {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+
+  .Back:hover{
+    background-color: #fff;
+    transform: scale(1.4);
+  }
+
+  .Cabecera-nav {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .Cabecera-nav.isActive {
+    transform: translateY(-180%);
+    height: 100vh;
+    opacity: 1;
+    background-color: #f5e580;
+    position: fixed;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .Cabecera-ul {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .Cabecera-li {
+    margin: 2em 0;
+    list-style: none;
+    background-color: #f5df5c;
+    padding: 0 10px;
+    border-radius: 20px;
+  }
+
+  .Cabecera-li:hover{
+    background-color: #fff;
+    transform: scale(1.2);
+  }
+
+  .Cabecera-li > .href {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+  }
+
+  .Cabecera-li > .href:hover {
+    color:#f3d422
+  }
+}
