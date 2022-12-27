@@ -10,3 +10,9 @@
     font-family: sans-serif;
     margin-top: 15px;
 }
+
+.images {
+    height: 240px;
+    border-radius: 100px;
+    object-fit: contain;
+  }
