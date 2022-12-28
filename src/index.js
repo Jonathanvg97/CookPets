@@ -12,6 +12,7 @@ import Footer from "./Components/Footer/Footer";
 import Menu from "./Components/Menu/Menu";
 import './Components/Menu/menus.css'
 import Contacts from "./Components/Contacts/Contacts";
+import Comunity from "./Components/Comunity/Comunity";
 
 
 const router = createBrowserRouter([
@@ -46,12 +47,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/Contacts",
-    element: <Contacts />,
+    element: (
+      <>
+      <Header/>
+      <Contacts />,
+      <Menu/>
+      </>
+    )
+   
+  },{
+    path: "/Comunity",
+    element: <Comunity />,
   },
   {
     path: "/",
     element: <App />,
   },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

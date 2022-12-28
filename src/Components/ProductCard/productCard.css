@@ -46,6 +46,17 @@
   background-color: #fff;
 }
 
+.Add{
+  border-radius: 20px;
+  font-family: 'Roboto';
+  color: #c9a900;
+}
+
+.Add:hover{
+  background-color: #f5e580;
+  color: #000;
+}
+
 h4 {
   text-align: center;
   margin-top: 20px ;

@@ -1,57 +1,64 @@
-// import React, { useState } from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Form from 'react-bootstrap/Form';
-// import Modal from 'react-bootstrap/Modal';
+import { useForm } from "react-hook-form";
+import './contacts.css'
 
-// function Contacts() {
-//   const [show, setShow] = useState(false);
+const Contactanos = () => {
 
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
+    const { register, formState: { errors },handleSubmit } = useForm({
+        defaultValues: {
+            nombre: '',
+            direccion: ''
+        }
+    });
 
-//   return (
-//     <>
-//       <Button variant="primary" onClick={handleShow}>
-//         Launch demo modal
-//       </Button>
+    const onSubmit = (data) => {
+        console.log(data);
+    }
 
-//       <Modal show={show} onHide={handleClose}>
-//         <Modal.Header closeButton>
-//           <Modal.Title>Modal heading</Modal.Title>
-//         </Modal.Header>
-//         <Modal.Body>
-//           <Form>
-//             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-//               <Form.Label>Email address</Form.Label>
-//               <Form.Control
-//                 type="email"
-//                 placeholder="name@example.com"
-//                 autoFocus
-//               />
-//             </Form.Group>
-//             <Form.Group
-//               className="mb-3"
-//               controlId="exampleForm.ControlTextarea1"
-//             >
-//               <Form.Label>Example textarea</Form.Label>
-//               <Form.Control as="textarea" rows={3} />
-//             </Form.Group>
-//           </Form>
-//         </Modal.Body>
-//         <Modal.Footer>
-//           <Button variant="secondary" onClick={handleClose}>
-//             Close
-//           </Button>
-//           <Button variant="primary" onClick={handleClose}>
-//             Save Changes
-//           </Button>
-//         </Modal.Footer>
-//       </Modal>
-//     </>
-//   );
-// }
+    return <div>
+        <h1 className="Form">Formulario</h1>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <div>
+                <label>Nombre</label>
+                <input type="text" {...register('nombre', {
+                    required: true,
+                    maxLength: 20
+                })} />
+                {errors.nombre?.type === 'required' && <p>El campo nombre es requerido</p>}
+                {errors.nombre?.type === 'maxLength' && <p>El campo nombre debe tener menos de 20 caracteres</p>}
+            </div>
+            <div>
+                <label>Dirección</label>
+                <input type="text" {...register('direccion', {
+                    required: true
+                })} />
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="text" {...register('email', {
+                    pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i
+                })} />
+                {errors.email?.type === 'pattern' && <p>El formato del email es incorrecto</p>}
+            </div>
+            <div>
+                <label>Mascota</label>
+                <select {...register('Mascota')}>
+                    <option value="Dog">Perro</option>
+                    <option value="Cat">Gato</option>
+                </select>
+            </div>
+            <div>
+                <label>Cuentanos</label>
+                <input type="text"{...register('Cuentanos', {
+                    required: true,
+                })} />
+                    {errors.nombre?.type === 'required' && <p>El campo cuentanos es requerido</p>}
+            </div>
+        
+            
+          
+            <input type="submit" value="Enviar Whatsapp" />
+        </form>
+    </div>
+}
 
-
-
-// export default Contacts
-
+export default Contactanos;
