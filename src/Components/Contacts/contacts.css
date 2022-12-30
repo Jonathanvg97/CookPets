@@ -1,52 +1,102 @@
-.Form{
-    text-align: center;
-    margin-top: 20px;
+.Form {
+  text-align: center;
+  margin-top: 20px;
 }
 
-form{
-    background-color: #f5e580;
-    padding: 40px;
-    border-radius: 30px;
-    font-family: 'Roboto';
-    font-weight: 600;
+form {
+  background-color: #f5e580;
+  padding: 40px;
+  border-radius: 30px;
+  font-family: "Roboto";
+  font-weight: 600;
 }
 
-input{
-    border-radius: 10px;
-    width: 240px;
-    margin-top: 5px;
+input {
+  border-radius: 10px;
+  width: 240px;
+  margin-top: 5px;
 }
 
-input:hover{
+input:hover {
   background-color: #f5e580;
 }
 
-label{
-    padding-right: 40px;
+label {
+  padding-right: 40px;
 }
 
-select{
-    border-radius: 21px;
-    margin-top: 5px;
-    background-color: #ffffff;
+select {
+  border-radius: 21px;
+  margin-top: 5px;
+  background-color: #ffffff;
 }
 
-select:hover{
-    background-color: #f5e580;
+select:hover {
+  background-color: #f5e580;
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-    form{
-        background-color: #f5e580;
-        padding: 120px;
-        border-radius: 30px;
-    }
-    input{
-        border-radius: 10px;
-        width: 440px;
-        margin-top: 5px;
-        justify-content: center;
-    }
-   
+  .Form {
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+ 
+  form {
+    background-color: #f5e580;
+    padding: 80px;
+    border-radius: 30px;
+    margin-left: 25%;
+    margin-right: 20%;
+  }
+  input {
+    border-radius: 10px;
+    width: 480px;
+  }
+
+  label {
+    padding-right: 80px;
+    font-size: 20px;
+  }
+
+  select {
+    border-radius: 21px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    font-size: 20px;
+  }
 
 }
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    .Form {
+        text-align: center;
+        margin-top: 100px;
+        
+      }
+     
+      form {
+        background-color: #f5e580;
+        padding: 80px;
+        border-radius: 30px;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      input {
+        border-radius: 10px;
+        width: 460px;
+      }
+    
+      label {
+        padding-right: 80px;
+        font-size: 20px;
+      }
+    
+      select {
+        border-radius: 21px;
+        margin-top: 5px;
+        background-color: #ffffff;
+        font-size: 20px;
+      }
+}
+

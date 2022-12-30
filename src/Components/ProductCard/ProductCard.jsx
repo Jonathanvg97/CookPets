@@ -1,41 +1,71 @@
 import React from "react";
 import "./productCard.css";
-
-const Size=(props)=>{
-
-    return(
-        <>
-      
-        <ul className="Size">
-        <button>
-          <li>{props.pequeña}</li>
-        </button>
-        <button>
-          <li>{props.mediana}</li>
-        </button>
-        <button>
-          <li>{props.grande}</li>
-        </button>
-      </ul>
-      </>
-    )
-}
+import { products } from "../../assest/Data/products";
+import {useState} from 'react'
 
 
-const ProductCard = (props) => {
+
+export const ProductCard = () => {
+
+  const[data, setData] = useState(products);
+
+    const filterResult = (typeOfCategory)=>{
+        const result = products.filter(
+            (curDate)=>{
+                return curDate.category === typeOfCategory
+            }
+            );
+            setData(result)
+            console.log(result)
+            console.log(data)
+        }
+
   return (
     <>
-      <div className="card">
-        <h2>{props.title}</h2>
-        <img src={props.url} alt="Imagenes Productos" />
-        <h3>{props.cantidad}</h3>
-        <h3>{props.price}</h3>
-        {props.title==="Torta Cumple" ? <Size pequeña={props.pequeña} mediana={props.mediana} grande={props.grande}/>:""}
-        {props.title==="Tortas" ? <Size pequeña={props.pequeña} mediana={props.mediana} grande={props.grande}/>:""}
-        <button className="Add">Agregar al Carrito</button>
+     <h4 className="DescripcionCook">CookPets 100% Natural</h4>
+        <div className="All">
+          <ul className="Categories">
+           
+            <button onClick={_=> setData(products)}>
+              <li className="Todos">Todos</li>
+            </button>
+            <button onClick={_=> filterResult('Tortas')}>
+              <li>Tortas</li>
+            </button>
+            <button onClick={_=> filterResult('Snacks')}>
+              <li>Snacks</li>
+            </button>
+            <button onClick={_=> filterResult('Birthday')}>
+              <li>Tortas CumplePet</li>
+            </button>
+            <button onClick={_=> filterResult('Planes y Promociones')}>
+              <li>Planes y Promociones</li>
+            </button>
+          </ul>
+          </div>
+     
+          <div className="ContainerCard">
+        {data.map((product) => {
+          return (
+            <>
+           
+              <div className="card" key={product.id}>
+                <h2>{product.title}</h2>
+                <img src={product.url} alt="Imagenes Productos" />
+                <h3>{product.category}</h3>
+                <p>{product.description}</p>
+                <h3>{product.size}</h3>
+                <h3>{product.price}</h3>
+              
+                <button className="Add">Agregar al Carrito</button>
+              </div>
+             
+            </>
+          );
+        })}
       </div>
     </>
   );
 };
 
-export default ProductCard;
+

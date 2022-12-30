@@ -163,6 +163,41 @@
     display: none;
   }
   
-
-  
 }
+
+@media (min-width: 576px) and (max-width: 991.98px){
+  .menu {
+    display:none
+   }
+   .Cabecera-ul{
+     top:180px;
+     margin-left:20%;
+     z-index: 4;
+     position: absolute;
+   }
+  
+  
+ .Cabecera-li {
+   list-style: none;
+   background-color: #f5df5c;
+   padding: 1px 15px;
+   justify-content: center;
+   border-radius: 20px;
+ }
+  
+ .Cabecera-li > .href {
+   font-size: 15px;
+   font-family: 'Roboto';
+   color: black;
+ }
+ 
+ .Cabecera-li:hover{
+   background-color: rgb(255, 236, 161);
+   transform: scale(1.2);
+ } 
+ 
+ .Back {
+     display: none;
+   }
+}
+

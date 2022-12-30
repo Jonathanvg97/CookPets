@@ -5,8 +5,7 @@ import App from "./App";
 import "remixicon/fonts/remixicon.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import ProductCard from "./Components/ProductCard/ProductCard";
-import Data from "./Components/DataProducts.json";
+import {ProductCard} from "./Components/ProductCard/ProductCard";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Menu from "./Components/Menu/Menu";
@@ -25,21 +24,7 @@ const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <h4 className="DescripcionCook">CookPets 100% Natural</h4>
-        <div className="All">
-          <ul className="Categories">
-         <button><li className="SubCategories">Todos</li></button>
-         <button><li>Tortas</li></button>
-         <button><li>Galletas</li></button>
-         <button><li>Gomitas</li></button>
-         <button><li>Promociones y Planes</li></button>
-          </ul>
-        </div>
-        {Data.map((info) => {
-          return (
-            <ProductCard title={info.title} url={info.url} cantidad={info.Cantidad} pequeña={info.pequeña} mediana={info.mediana} grande={info.grande} price={info.Price}  />
-          );
-        })}
+        <ProductCard/>
         <Footer/>
         <Menu/>
       </>

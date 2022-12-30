@@ -15,7 +15,7 @@ function Comunity() {
         <>
         <div>
             <Header/>
-            <h1 style={{textAlign:"center",marginTop:"20px"}}>PetComunidad</h1>
+            <h1 className="PrincipalC">PetComunidad</h1>
 
             
       <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -61,7 +61,7 @@ function Comunity() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<p style={{fontSize:"15px",justifyContent:"center", textAlign:"center",marginTop:"10px",fontFamily:"Roboto",padding:"0px 20px"}}>"Si quieres conocer la lealtad, la fidelidad, el agradecimiento, la confianza, el perdón y el compañerismo en su más pura expresión, entonces comparte tu vida con una mascota"</p>
+<p className="Slogan">"Si quieres conocer la lealtad, la fidelidad, el agradecimiento, la confianza, el perdón y el compañerismo en su más pura expresión, entonces comparte tu vida con una mascota"</p>
 
             <Footer/>
             <Menu/>

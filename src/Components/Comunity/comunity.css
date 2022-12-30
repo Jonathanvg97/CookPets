@@ -1,0 +1,51 @@
+ .PrincipalC{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Slogan{
+    font-size:15px;
+    justify-content:center;
+    text-align:center;
+    margin-top:10px;
+    font-family:"Roboto";
+    padding:0px 20px
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .PrincipalC{
+        margin-top:100px;
+        text-align: center;
+    }
+
+    
+.Slogan{
+    font-size:25px;
+    justify-content:center;
+    text-align:center;
+    margin-top:10px;
+    font-family:"Roboto";
+    padding:10px 85px
+}
+}
+
+@media (min-width: 576px) and (max-width: 991.98px){
+    
+    .PrincipalC{
+        margin-top:100px;
+        text-align: center;
+    }
+
+    
+.Slogan{
+    font-size:22px;
+    justify-content:center;
+    text-align:center;
+    margin-top:60px;
+    font-family:"Roboto";
+    padding:30px 85px
+}
+}
+
+
