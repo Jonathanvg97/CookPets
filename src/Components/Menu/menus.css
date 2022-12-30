@@ -130,9 +130,7 @@
 }
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-  .menu {
-   display:none
-  }
+ 
   .Cabecera-ul{
     top:260px;
     margin-left:20%;

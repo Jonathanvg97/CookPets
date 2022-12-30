@@ -12,12 +12,23 @@ import Menu from "./Components/Menu/Menu";
 import './Components/Menu/menus.css'
 import Contacts from "./Components/Contacts/Contacts";
 import Comunity from "./Components/Comunity/Comunity";
+//import redux
+import { createStore } from 'redux';
+import {Provider} from 'react-redux'
+import Cart from "./store/CarBuy/Cart";
+
+import Reducer from './Components/Reducer';
+    const store= createStore(Reducer)
 
 
 const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Home />,
+  },
+  {
+    path: "/Cart",
+    element: <Cart />,
   },
   {
     path: "/ProductCard",
@@ -54,6 +65,8 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+  <Provider store={store}>
+      <RouterProvider router={router} />
+  </Provider>
+</React.StrictMode>
 );

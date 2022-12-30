@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import './contacts.css'
 
+
 const Contactanos = () => {
 
     const { register, formState: { errors },handleSubmit } = useForm({
@@ -9,6 +10,12 @@ const Contactanos = () => {
             direccion: ''
         }
     });
+
+    // const App = () => (
+    //     <ReactWhatsapp number="57 3108580916" message="<value>" />
+    //   );
+      
+    //   render(<App />, document.getElementById('root'));
 
     const onSubmit = (data) => {
         console.log(data);
@@ -61,4 +68,7 @@ const Contactanos = () => {
     </div>
 }
 
+
+
 export default Contactanos;
+

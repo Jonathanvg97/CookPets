@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import "./menus.css";
 import { Link } from "react-router-dom";
-
+import Cart from "../../store/CarBuy/Cart";
 
 const Menu = () => {
   const [menu, setMenu] = useState(false);
@@ -21,9 +21,9 @@ const Menu = () => {
         <button onClick={toggleMenu} className="opcions">
           <i className="ri-grid-fill iconMenu"></i>
         </button>
-        <button className="opcions">
+        <Link to="/Cart"><button className="opcions" id="Car"> 
           <i className="ri-shopping-cart-2-line iconCar"></i>
-        </button>
+        </button></Link>
       </div>
 
       <nav className={`Cabecera-nav ${menu ? "isActive" : ""}`}>
@@ -43,7 +43,7 @@ const Menu = () => {
             </Link>
           </li>
           <li className="Cabecera-li">
-            <Link to="/Comunity" className="href">
+            <Link to="/PetComunidad" className="href">
               PetComunidad
             </Link>
           </li>
