@@ -1,74 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import { useSelector, useDispatch } from "react-redux";
-// import "../CarBuy/cart.css";
-// import Header from "../../Components/Header/Header";
-// import Menu from "../../Components/Menu/Menu";
-// import Reducer from "../../Components/Reducer";
-
-// const Cart = () => {
-//   const cart = useSelector((state) => state);
-//   console.log(cart);
-//   const dispatch = useDispatch();
-//   const addition = (acc, currentvalue) => {
-//     return acc + currentvalue.price * currentvalue.quantity;
-//   };
-//   const total = cart.reduce(addition, 0);
-//   return (
-//     <>
-//     <Header />
-//     <main className="main-car">
-//     <section className='container-carrito'>
-//         <div className='p-car-container'>
-//           <div className="ContainerCard">
-//             {cart.map((product) => {
-//               return (
-//                 <div className="card" key={product.id}>
-//                   <h2>{product.title}</h2>
-//                   <img src={product.url} alt="Imagenes Productos" />
-//                   <h3>{product.category}</h3>
-//                   <h3>{product.size}</h3>
-//                   <p> `$precio: ${product.price}`</p>
-//                 <p>Total $:{product.price * product.quantity}</p>
-//                 <button
-//                   onClick={() => dispatch({ type: "REMOVE", payload: product})}
-//                 >
-//                   remove
-//                 </button>
-//                 <button
-//                   onClick={() => dispatch({ type: "INCREASE", payload: product })}
-//                 >
-//                   +
-//                 </button>
-//                 <p>{product.quantity}</p>
-//                 <button
-//                   onClick={() => {
-//                     if (product.quantity > 1) {
-//                       dispatch({ type: "DECREASE", payload: product });
-//                     } else {
-//                       dispatch({ type: "REMOVE", payload: product });
-//                     }
-//                   }}
-//                 >
-//                   -
-//                 </button>
-//                 </div>
-//               );
-//             })}
-          
-//           </div>
-//         </div>
-//         </section>
-//       </main>
-      
-//       {total > 0 && <h2>total:{total}</h2>}
-//      <Menu/>
-//      </>
-//   );
-// };
-
-// export default Cart;
-
 
 import Header from "../../Components/Header/Header";
 import Menu from "../../Components/Menu/Menu"
@@ -130,7 +59,6 @@ function Carrito() {
                         <h5>{`Productos en el carrito: ${totalItems}`}</h5>
                         <p>Total:</p>
                         <h4>$ {total}</h4>
-                        <button>CONTINUAR</button>
                         {console.log(cart)}
                     </div>
                 </section>
