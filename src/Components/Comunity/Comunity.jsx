@@ -61,7 +61,7 @@ function Comunity() {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
-<p className="Slogan">"Si quieres conocer la lealtad, la fidelidad, el agradecimiento, la confianza, el perdón y el compañerismo en su más pura expresión, entonces comparte tu vida con una mascota"</p>
+<p className="" style={{fontSize:"15px",justifyContent:"center", textAlign:"center",marginTop:"10px",fontFamily:"Roboto",padding:"0px 20px"}}>"Si quieres conocer la lealtad, la fidelidad, el agradecimiento, la confianza, el perdón y el compañerismo en su más pura expresión, entonces comparte tu vida con una mascota"</p>
 
             <Footer/>
             <Menu/>

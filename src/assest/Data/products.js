@@ -112,7 +112,7 @@ export const products = [
     id: "09",
     title: "Torta Semanal",
     price: 100000,
-    url:"https://drive.google.com/uc?export=view&id=17Hg0lOtlMdKXA5sj1HZDCofZP7oyHFKV",
+    url:"https://drive.google.com/uc?export=view&id=1_PNYDBzdcIenaLVjTRPIYywL2b6tVVB2",
     category: "Planes y Promociones",
     description:
       "Alimento para la semana",
@@ -124,7 +124,7 @@ export const products = [
     id: "10",
     title: "Torta Quincenal",
     price: 180000,
-    url:"https://drive.google.com/uc?export=view&id=17Hg0lOtlMdKXA5sj1HZDCofZP7oyHFKV",
+    url:"https://drive.google.com/uc?export=view&id=1_PNYDBzdcIenaLVjTRPIYywL2b6tVVB2",
     category: "Planes y Promociones",
     description:
       "Alimento para dos semanas",

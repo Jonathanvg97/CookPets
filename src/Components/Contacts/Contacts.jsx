@@ -11,11 +11,7 @@ const Contactanos = () => {
         }
     });
 
-    // const App = () => (
-    //     <ReactWhatsapp number="57 3108580916" message="<value>" />
-    //   );
-      
-    //   render(<App />, document.getElementById('root'));
+    
 
     const onSubmit = (data) => {
         console.log(data);
@@ -63,7 +59,7 @@ const Contactanos = () => {
         
             
           
-            <input type="submit" value="Enviar Whatsapp" />
+            <input type="submit" value="Enviar" />
         </form>
     </div>
 }

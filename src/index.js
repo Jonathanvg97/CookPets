@@ -50,8 +50,9 @@ const router = createBrowserRouter([
       <Menu/>
       </>
     )
-   
-  },{
+
+  },
+  {
     path: "/Comunity",
     element: <Comunity />,
   },

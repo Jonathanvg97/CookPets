@@ -43,7 +43,7 @@ const Menu = () => {
             </Link>
           </li>
           <li className="Cabecera-li">
-            <Link to="/PetComunidad" className="href">
+            <Link to="/Comunity" className="href">
               PetComunidad
             </Link>
           </li>
