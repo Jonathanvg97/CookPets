@@ -3,18 +3,23 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-/* P CAR COTAINER */
+.img-card-car{
+    display: none;
+}
 .container-carrito{
     width: 600px;
     margin: 2%;
     padding: 0%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 /* P CAR CARD */
 .p-car-container{
     position: relative;
     width: 600px;
+    margin-top: 1%;
     padding: 2%;
     display: flex;
     justify-content: space-between;
@@ -33,11 +38,11 @@
 .flex-container{
     width: 69%;
     display: flex;
-    flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
+    margin-top: 80px;
 }
 .flex-container p{
     text-transform: capitalize;
@@ -46,12 +51,32 @@
 .flex-sub-cont{
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 .flex-sub-cont div{
     margin: 0px 20px;
     display: flex;
     flex-direction: column;
     align-content: center;
+}
+.cont-buttons{
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    flex-direction: row !important;
+}
+.cont-buttons p{
+    width: 100%;
+}
+.btn-add-sub{
+    width: 20px;
+    height: 20px;
+    padding: 0%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
 }
 /* DELETE BTN */
 .delete-product{
@@ -61,17 +86,18 @@
     border-radius: 4px;
     border: 1px solid;
     font-size: 13px;
-    right: 2%;
-    top: 7%;
+    right: 30%;
+    top: 30%;
     background-color: white;
     align-items: center;
     display: flex;
 }
 /* CARD PURCHASE */
 .car-total{
-    width: 500px;
-    margin: 2% 0%;
-    padding: 4% 8%;
+    width: 350px;
+    margin-top: 150px;
+    /* margin: 2% 0%;
+    padding: 4% 8%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,13 +119,17 @@
     font-style: italic;
     margin: 0%;
 }
-.car-total a{
+.car-total button{
     margin: 5% 10% 0%;
     padding: 2px 0px;
-    font-size: 1.5em;
+    font-size: px14;
     background-color: white;
     border: 2px solid black;
     border-radius: 7px;
+    transition: ease-in-out .2s;
+}
+.car-total button:hover{
+    background-color: #f5df5c;
 }
 @media (max-width: 768px) {
     .container-carrito{
@@ -148,6 +178,10 @@
     .flex-container p{
         font-size: 14px;
     }
+    .flex-container{
+        margin-left: 50%;
+        margin-top: 2px;
+    }
     .flex-sub-cont p{
         font-size: 12px;
     }
@@ -155,8 +189,10 @@
         margin: 0px 10%;
     }
     .delete-product{
-        width: fit-content;
-        left: 2%;
+        right: 40%;
         top: 7%;
+    }
+    .btn-add-sub{
+        border: 0px;
     }
 }

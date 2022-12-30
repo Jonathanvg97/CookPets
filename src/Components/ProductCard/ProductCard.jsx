@@ -4,6 +4,8 @@ import { products } from "../../assest/Data/products";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
+
+
 export const ProductCard = () => {
   //Reduce
   const cart = useSelector((state) => state);
@@ -57,7 +59,7 @@ export const ProductCard = () => {
                   {product.description}
                 </p>
                 <h3>{product.size}</h3>
-                <h3>{product.price}</h3>
+                <h3> precio: ${product.price}</h3>
 
                 <button onClick={()=>dispatch({type:'ADD',payload:product})} className="Add"> Add
                  <i class="ri-add-circle-fill"></i>

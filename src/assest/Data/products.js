@@ -12,6 +12,7 @@ export const products = [
     description:
       "Torta 100% natural, contiene cereal, pollo, visceras, verduras",
     size: "300 gr",
+    quantity:1
   },
   {
     id: "02",
@@ -22,6 +23,7 @@ export const products = [
     description:
       "Torta 100% natural, contiene cereal, pollo, visceras, verduras",
     size: "400 gr",
+    quantity:1
   },
   {
     id: "03",
@@ -32,6 +34,7 @@ export const products = [
     description:
       "Torta 100% natural, contiene cereal, pollo, visceras, verduras",
     size: "500 gr",
+    quantity:1
   },
 
 
@@ -48,17 +51,19 @@ export const products = [
     description:
       "Snacks 100% naturales, sin conservantes ni colorantes",
     size: "Caja x 4",
+    quantity:1
   },
 
   {
     id: "05",
     title: "Galletas",
-    price: 5000,
+    price:5000,
     url:"https://drive.google.com/uc?export=view&id=1_SPSH_1d-9zDP8cfrl1Ow9owbCOSainH",
     category: "Snacks",
     description:
     "Snacks 100% naturales, sin conservantes ni colorantes",
     size: "Paquete x 15",
+    quantity:1
   },
    {
     id: "06",
@@ -69,6 +74,7 @@ export const products = [
     description:
     "Snacks 100% naturales, sin conservantes ni colorantes",
     size: "Paquete x 15",
+    quantity:1
   },
 
  
@@ -84,6 +90,7 @@ export const products = [
     description:
       "Celebra el cumpleaños de tu peludo con una deliciosa torta de cumpleaños 100% natural y nutritiva.",
     size: "Pequeña",
+    quantity:1
   },
 
   /*
@@ -98,6 +105,7 @@ export const products = [
     description:
       "Encuentra los mejores alimentos y planes para tu mascota a buen precio.",
     size: "Torta, Cupcakes, galletas y gomitas",
+    quantity:1
   },
 
   {
@@ -109,6 +117,7 @@ export const products = [
     description:
       "Alimento para la semana",
     size: "300 gr Unidad",
+    quantity:1
   },
 
   {
@@ -120,6 +129,7 @@ export const products = [
     description:
       "Alimento para dos semanas",
     size: "300 gr Unidad",
+    quantity:1
   },
 ];
 
