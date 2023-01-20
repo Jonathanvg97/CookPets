@@ -5,6 +5,9 @@ import { useSelector, useDispatch } from "react-redux";
 import "../CarBuy/cart.css";
 import ReactWhatsapp from "react-whatsapp";
 import Footer from "../../Components/Footer/Footer";
+import { NumericFormat } from 'react-number-format';
+
+
 
 function Carrito() {
   //Reduce
@@ -37,7 +40,8 @@ function Carrito() {
                 </section>
                 <section className="textContainer">
                   <h3 className="nameCart">{product.title}</h3>
-                  <p className="textCart">Precio ${product.price}</p>
+                  <p className="textCart">Precio $ <NumericFormat className="text-title"  value=  {product.price} thousandSeparator="," /></p>
+             
                 </section>
                 <button
                   className="delete"
@@ -70,13 +74,16 @@ function Carrito() {
             );
           })}
         </section>
-        <div className="amount">{total > 0 ? <h2>Total a pagar: <span>${total}</span></h2> : <h2>Total a pagar: <span>${0}</span></h2>}</div>
+     
+        <div className="amount">{total > 0 ? <h2>Total a pagar: <span>$ <NumericFormat className="text-title2"  value=  {total} thousandSeparator="," /></span></h2> : <h2>Total a pagar: <span>${0}</span></h2>}</div>
+        
           <ReactWhatsapp className={`wp ${total === 0 ? 'oculto' : ''}`}
             number="+573108580916"
             message={`Bienvenidos a CookPets!!! Donde encontraras productos 100% naturales para tu mascota, que esperas para darle gusto a tu peludo con un delicioso y nutritivo alimento. La cantidad de productos a solicitar son: ${cart.map(
               (product) =>  product.quantity+ " " + product.title + " de "+ product.size
-            )} y el total a pagar es de $${total} este pedido incluye el envío si el monto es superior a $40.000. Gracias por confiar en CookPets.`}
+            )} y el total a pagar es de $$ {total} este pedido incluye el envío si el monto es superior a $40.000. Gracias por confiar en CookPets.`}
           >
+
             Realizar Pedido
           </ReactWhatsapp>
       

@@ -15,6 +15,18 @@ ul {
   padding: 5px 15px;
 }
 
+button, input, optgroup, select, textarea {
+  margin: 0;
+  width: 95px;
+  font-size: 14px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-align: center;
+  background: transparent;
+  border: 0;
+}
+
 .Categories button {
   margin: 5px 1rem;
 }
@@ -96,7 +108,7 @@ ul {
 .card {
   border-radius: 20px;
   width: 240px;
-  height: 400px;
+  height: 500px;
   padding: 0.8em;
   background-color: #fcea86;
   position: relative;
@@ -106,7 +118,7 @@ ul {
 
 .card-img {
   background-color: #a6ffc4;
-  height: 40%;
+  height: 50%;
   width: 100%;
   border-radius: 0.5rem;
   transition: 0.3s ease;

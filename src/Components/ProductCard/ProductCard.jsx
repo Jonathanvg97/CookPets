@@ -4,6 +4,7 @@ import { products } from "../../assest/Data/products";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Footer from "../Footer/Footer";
+import { NumericFormat } from 'react-number-format';
 
 
 export const ProductCard = () => {
@@ -56,7 +57,8 @@ export const ProductCard = () => {
                   <p className="text-body">{product.description}</p>
                 </div>
                 <div className="card-footer">
-                  <span className="text-title">precio: ${product.price}</span>
+             
+                  <span className="text-title">precio: $  <NumericFormat className="text-title"  value={product.price} thousandSeparator="," /></span>
               
                   <button className="card-button" onClick={()=>dispatch({type:'ADD',payload:product})} > 
                     <svg className="svg-icon" viewBox="0 0 20 20">
