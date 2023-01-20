@@ -26,14 +26,7 @@ function Carrito() {
     <>
       <Header />
       <div className="global">
-        <h2
-          style={{
-            margin: "3rem 0 1rem 0",
-            textAlign: "center",
-            color: "var(--colorGlobal)",
-            fontSize: "2rem",
-          }}
-        >
+        <h2 className="Pedido">
           Pedido
         </h2>
         <section className="containerCart">
@@ -89,7 +82,9 @@ function Carrito() {
           </ReactWhatsapp>
       
       </div>
+      <div style={{marginTop:'450px'}}>
       <Footer/>
+      </div>
       <Menu />
     </>
   );

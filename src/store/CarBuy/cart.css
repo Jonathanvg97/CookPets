@@ -1,5 +1,12 @@
 
 /* P CAR CARD */
+.Pedido{
+  margin-top: 120px;
+  justify-content: center;
+  text-align: center;
+
+}
+
 .p-car-container{
     position: relative;
     width: 600px;
@@ -155,6 +162,13 @@
     }
 }
 @media (max-width: 425px) {
+
+  .Pedido{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+  }
     .img-card-car{
         width: 100px;
         height: 90px;
@@ -320,6 +334,13 @@
   }
   
   @media only screen and (min-width: 600px) {
+
+    .Pedido{
+      margin-top: 110px;
+      justify-content: center;
+      text-align: center;
+      font-size: 40px;
+    }
     .global {
       margin: auto;
     }
