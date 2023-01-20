@@ -1,68 +1,101 @@
-.dog{
-    margin-top: 20px;
-    left: 0;
-    right: 0;
-    width: 200px;
-    display: flex;
-    
+.dog {
+  margin-top: 20px;
+  width: 200px;
+  display: flex;
 }
 
-.principal{
-    justify-content: center;
-    text-align: center;
-    font-family: sans-serif;
-    margin-top: 15px;
+.principal {
+  justify-content: center;
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 15px;
 }
 
 .images {
-    height: 240px;
-    border-radius: 100px;
+  height: 240px;
+  border-radius: 100px;
+  object-fit: contain;
+}
+
+@media (max-width: 481px) {
+  .dog {
+    width: 70%;
+    margin: 40px auto;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+
+  .container {
+    display: grid;
+    margin: 80px;
+    grid-template-columns: 30% 70%;
+  }
+
+  .dog {
+   width: 350px !important;
+  }
+  .principal {
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 50px;
+    font-family: "Roboto";
+    margin-top: 100px !important;
+    font-size: 45px !important;
+    padding: 0 180px;
+  }
+
+  /* div.carousel-inner .carousel-item img.images {
+    height: 400px;
+    filter: blur(2px);} */
+
+  .images {
+    height: 450px!important;
+    border-radius: 70%;
     object-fit: contain;
   }
+}
 
-
-  @media only screen and (min-width: 1024px) {
-  .dog{ 
-   
-    }
-    .principal{
-        justify-content: center;
-        text-align: center;
-        font-family: 'Roboto';
-        margin-top: 80px;
-        font-size: 25px;
-        padding: 0 180px;
-    }
-
-    .images {
-        height: 340px;
-        border-radius: 70%;
-        object-fit: contain;
-      }
-
+@media (min-width: 760px) {
+  .dog {
+    width: 260px;
+    margin: 70px auto;
   }
 
-  @media (min-width: 576px) and (max-width: 990px){
-
-    .dog{
-        margin-top: 80px;
-        margin-left: 35%;
-        width: 240px;
-    }
-    .principal{
-        justify-content: center;
-        text-align: center;
-        font-family: 'Roboto';
-        margin-top: 20px;
-        font-size: 25px;
-        padding: 0 100px;
-    }
-
-    .images {
-        height: 300px;
-        border-radius: 70%;
-        object-fit: contain;
-      }
-
+  .principal {
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto";
+    margin-top: -40px;
+    font-size: 30px;
+    padding: 0 80px;
   }
-  
+
+  .images {
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    display: grid;
+    margin: 80px;
+    grid-template-columns: 45% 65%;
+  }
+  .dog {
+    width: 460px!important;
+    margin: 70px auto;
+  }
+
+  .principal {
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto";
+    margin-top: -40px;
+    font-size: 40px;
+    padding: 0 0 0 180px;
+  }
+
+}

@@ -2,7 +2,7 @@
   left: 0;
   right: 0;
   position: sticky;
-  background-color: #f5e580;
+  background-color: #FECE00;
   font-size: 40px;
   text-align: center;
   bottom: 0px;
@@ -10,7 +10,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 5px 0 25px rgba(0,0,0,0.5);
 }
+
 
 .opcions {
   border-radius: 20px;
@@ -64,6 +66,10 @@
     outline: none;
     border: none;
   }
+  
+.car2{
+  display: none !important;
+}
 
   .Back {
     position: absolute;
@@ -129,6 +135,7 @@
   .Cabecera-li > .href:hover {
     color: #f3d422;
   }
+
 }
 
 @media screen and (min-width: 700px) {
@@ -144,9 +151,9 @@
   }
 }
 
-@media all and (min-width: 1020px) {
+@media only screen and (min-width: 1020px) {
   .Cabecera-ul {
-    top: 240px;
+    top: 250px;
     z-index: 4;
     left: 0;
     right: 0;
@@ -165,13 +172,13 @@
   .Cabecera-li {
     list-style: none;
     background-color: #f5df5c;
-    padding: 0px 20px;
+    padding: 10px 30px;
     justify-content: center;
     border-radius: 20px;
   }
 
   .Cabecera-li > .href {
-    font-size: 20px;
+    font-size: 25px;
     color: black;
   }
 
@@ -188,7 +195,7 @@
   }
 }
 
-@media (min-width: 576px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 900px) {
   .menu {
     display: none;
   }

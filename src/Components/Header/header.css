@@ -1,38 +1,71 @@
 .header{
-    background-color: #f1ce0a8e;
+    background-color: #FECE00;
     padding: 20px;
+    box-shadow:0 0 35px rgba(0, 0, 0,.5);
 }
 
 
 .Principal{
     text-align:center;
     font-size: 20px; 
-    margin-top: -60px;
-    margin-left: 20px;
+    margin-top: -40px;
 }
 
 .logocook{
     margin-top:-10px;
     width: 60px;
+    border: 1px solid rgba(0, 0, 0,.5);
+    border-radius: 50%;
+    box-shadow:0 0 25px rgba(0, 0, 0,.5);
 }
 
 .contacts{
     float: right ;
-    margin: 10px;
-    margin-top: -5px;
-    border-radius: 20px;
-    color: #000;
-    background-color:#F0EEE2;
-    font-size: 10px;
+    margin: 0 1px;
+    margin-top: -2px;
+    padding: 0.1em 0.25em;
+    width: 100x;
+    height: 18px;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 18px;
+    font-size: 8px;
 }
 
-.contacts:hover{
-    background-color: #F5E580;
-}
+.contacts span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 100px;
+    height: 18px;
+    background-color: #212121;
+    border-radius: 18px;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .contacts span:active {
+    background-color: #d3b429;
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+    color: #000;
+     border-radius: 18px;
+  }
+  
+  .contacts span:not(hover) {
+    transition: all 1s;
+  }
+  
+
+
 
 @media all and (min-width: 1020px) {
     .header{
-        background-color: #f1ce0a8e;
         padding: 40px;
     }
     .logocook{
@@ -43,22 +76,54 @@
         text-align:center;
         font-size:45px; 
         margin-top: -100px;
-        margin-left: 20px;
     }
-
     .contacts{
-        margin-top: -15px;
-        border-radius: 20px;
-        color: #000;
-        background-color:#F0EEE2;
-        font-size: 20px;
-    }
+    float: right ;
+    margin: 10px;
+    margin-top: -35px;
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.5em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 18px;
+    font-size: 12px;
+}
+
+.contacts span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 18px;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .contacts span:hover {
+    background-color: #d3b429;
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+    color: #000;
+     border-radius: 18px;
+  }
+  
+  .contacts span:not(hover) {
+    transition: all 1s;
+  }
+  
     
 }
 
-@media (min-width: 576px) and (max-width: 991.98px){
+@media (min-width: 576px) and (max-width: 800px){
     .header{
-        background-color: #f1ce0a8e;
         padding: 45px;
     }
     .logocook{
@@ -73,10 +138,32 @@
     }
 
     .contacts{
-        margin-top: -15px;
-        border-radius: 20px;
-        color: #000;
-        background-color:#F0EEE2;
-        font-size: 20px;
+        float: right ;
+        margin: 10px;
+        margin-top: -35px;
+        padding: 0.1em 0.25em;
+        width: 120px;
+        height: 60px;
+        background-color: #212121;
+        border: 0.08em solid #fff;
+        border-radius: 18px;
+        font-size: 12px;
     }
+
+    .contacts span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 120px;
+    height: 60px;
+    background-color: #212121;
+    border-radius: 18px;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
 }
+

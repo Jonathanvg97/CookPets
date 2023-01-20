@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Footer from "../Footer/Footer";
 
+
 export const ProductCard = () => {
   //Reduce
   const cart = useSelector((state) => state);

@@ -13,11 +13,13 @@ function Home() {
     <>
     <Header/>
     <div className="home">
-      <img className="dog" src={Dog} alt="" />
+      <div className="container">
+      <img className="dog" src={Dog} alt=""style={{display:'block'}} />
       <p className="principal">
         Cookpets 100% natural, somos un emprendimiento que busca una nueva
         alternativa de alimentación para nuestras mascotas.
       </p>
+      </div>
 
       <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
 

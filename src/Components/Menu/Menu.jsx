@@ -52,6 +52,11 @@ const Menu = () => {
               Contactanos
             </Link>
           </li>
+          <li className="Cabecera-li ">
+            <Link to="/Cart" className="href car2">
+            <i className="ri-shopping-cart-2-line iconCar "></i>
+            </Link>
+          </li>
         </ul>
       </nav>
     </>

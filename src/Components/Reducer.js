@@ -1,8 +1,16 @@
+import Swal from 'sweetalert2'
+
 const Reducer = (cart = [], action) => {
   if (action.type === "ADD") {
     let tempcart = cart.filter((product) => product.id === action.payload.id);
     if (tempcart < 1) {
-      return [...cart, action.payload];
+      return Swal.fire({
+        position: 'top-center',
+        icon: 'success',
+        title: 'Producto agregado',
+        showConfirmButton: false,
+        timer: 1500
+      }), [...cart, action.payload];
     } else {
       return cart;
     }

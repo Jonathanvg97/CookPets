@@ -1,6 +1,6 @@
 h4 {
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 35px;
 }
 
@@ -16,7 +16,7 @@ ul {
 }
 
 .Categories button {
-  margin: 0 1rem;
+  margin: 5px 1rem;
 }
 
 .Categories button {
@@ -174,9 +174,33 @@ svg {
     margin: 20px;
     place-items: center;
   }
+
+  h4 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 24px;
+    padding: 5px 80px;
+    line-height: 30px;
+  }
+  
+  .Categories button {
+    border-radius: 10px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0.5rem;
+  }
+
+  
 }
 
-@media only screen and (min-width: 482px) and (max-widht:768px)  {
+@media only screen and (min-width: 482px) and (max-widht:900px)  {
+  
+  .All {
+    text-align: center;
+    align-items: center;
+    padding: 5px 15px;
+  }
   .ContainerCard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -190,7 +214,7 @@ svg {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 700;
-    margin: 0.5rem;
+    margin: 10px 0 10px!important;
   }
 
   .bt {
@@ -207,21 +231,3 @@ svg {
   }
 }
 
-@media only screen and (max-width: 480px)  {
-
-h4 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 24px;
-  padding: 5px 80px;
-  line-height: 30px;
-}
-
-.Categories button {
-  border-radius: 10px;
-  font-family: "Roboto";
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0.5rem;
-}
-}
