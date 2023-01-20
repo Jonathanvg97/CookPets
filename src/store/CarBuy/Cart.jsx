@@ -17,11 +17,10 @@ function Carrito() {
   };
   const total = cart.reduce(addition, 0);
 
-  let totalItems = 0;
+  // let totalItems = 0;
   //Total
-  cart.map((products) => {
-    totalItems += products.quantity;
-  });
+  
+  // totalItems += cart.quantity;
   return (
     <>
       <Header />
@@ -75,8 +74,8 @@ function Carrito() {
           <ReactWhatsapp className={`wp ${total === 0 ? 'oculto' : ''}`}
             number="+573108580916"
             message={`Bienvenidos a CookPets!!! Donde encontraras productos 100% naturales para tu mascota, que esperas para darle gusto a tu peludo con un delicioso y nutritivo alimento. La cantidad de productos a solicitar son: ${cart.map(
-              (product) => product.quantity+ " " + product.title + " de "+ product.size
-            )} y el total a pagar es de $${total}, esto no incluye el envío, solamente es gratis cuando pasa el limite de $40.000. Gracias por confiar en CookPets.`}
+              (product) =>  product.quantity+ " " + product.title + " de "+ product.size
+            )} y el total a pagar es de $${total} este pedido incluye el envío si el monto es superior a $40.000. Gracias por confiar en CookPets.`}
           >
             Realizar Pedido
           </ReactWhatsapp>
