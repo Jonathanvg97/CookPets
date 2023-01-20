@@ -25,72 +25,70 @@ function Carrito() {
   return (
     <>
       <Header />
-      <main className="main main-car">
-        <section className="container-carrito">
-          {cart.map((product) => (
-            <div className="p-car-container" key={product.id}>
-              <img src={product.image} alt="" className="img-card-car" />
-              <div className="flex-container">
-                <p>{product.title}</p>
-                <img src={product.url} alt="Imagenes Productos" />
-                <div className="flex-sub-cont">
-                  <div>
-                    <p>{product.category}</p>
-                    <p>$ {product.price * product.quantity}</p>
-                  </div>
-                  <div className="cont-buttons">
-                    <button
-                      onClick={() => {
-                        if (product.quantity > 1) {
-                          dispatch({ type: "DECREASE", payload: product });
-                        } else {
-                          dispatch({ type: "REMOVE", payload: product });
-                        }
-                      }}
-                      className="btn-add-sub"
-                    >
-                      -
-                    </button>
-                    <div>
-                      <p>{product.quantity}</p>
-                    </div>
-                    <button
-                      onClick={() =>
-                        dispatch({ type: "INCREASE", payload: product })
+      <div className="global">
+        <h2
+          style={{
+            margin: "3rem 0 1rem 0",
+            textAlign: "center",
+            color: "var(--colorGlobal)",
+            fontSize: "2rem",
+          }}
+        >
+          Pedido
+        </h2>
+        <section className="containerCart">
+          {cart.map((product) => {
+            return (
+              <div className="inCart" key={product.id}>
+                <section className="imageCart">
+                  <img src={product.url} alt="Imagen del producto" />
+                </section>
+                <section className="textContainer">
+                  <h3 className="nameCart">{product.title}</h3>
+                  <p className="textCart">Precio ${product.price}</p>
+                </section>
+                <button
+                  className="delete"
+                  onClick={() => dispatch({ type: "REMOVE", payload: product })}
+                >
+                  <i className="ri-delete-bin-6-line icon"></i>
+                </button>
+                <section className="quatity">
+                  <button
+                    onClick={() => {
+                      if (product.quantity > 1) {
+                        dispatch({ type: "DECREASE", payload: product });
+                      } else {
+                        dispatch({ type: "REMOVE", payload: product });
                       }
-                      className="btn-add-sub"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
+                    }}
+                  >
+                    <i className="ri-subtract-line"></i>
+                  </button>
+                  <p>{product.quantity}</p>
+                  <button
+                    onClick={() =>
+                      dispatch({ type: "INCREASE", payload: product })
+                    }
+                  >
+                    <i className="ri-add-line"></i>
+                  </button>
+                </section>
               </div>
-              <button
-                onClick={() => dispatch({ type: "REMOVE", payload: product })}
-                className="delete-product"
-              >
-                X
-              </button>
-            </div>
-          ))}
+            );
+          })}
         </section>
-        <section className="section-car-total">
-          <div className="car-total">
-            <h5>{`Productos en el carrito: ${totalItems}`}</h5>
-            <p>Total:</p>
-            <h4>$ {total}</h4>
-            {console.log(cart)}
-          </div>
-        </section>
-      </main>
-      <ReactWhatsapp
-        number="57-310-858-0916"
-        message={`Hello Somos CookPets, en que podemos ayudarte!!! ${cart.map(
-          (product) => product.quantity + " " + product.title
-        )} para $${total}`}>
-        {" "}
-      Whatsapp{" "}
-      </ReactWhatsapp>
+        <div className="amount">{total > 0 ? <h2>Total a pagar: <span>${total}</span></h2> : <h2>Total a pagar: <span>${0}</span></h2>}</div>
+          <ReactWhatsapp className={`wp ${total === 0 ? 'oculto' : ''}`}
+            number="+573108580916"
+            message={`Bienvenidos a CookPets!!! Donde encontraras productos 100% naturales para tu mascota, que esperas para darle gusto a tu peludo con un delicioso y nutritivo alimento. La cantidad de productos a solicitar son: ${cart.map(
+              (product) => product.quantity+ " " + product.title + " de "+ product.size
+            )} y el total a pagar es de $${total}, esto no incluye el envío, solamente es gratis cuando pasa el limite de $40.000. Gracias por confiar en CookPets.`}
+          >
+            Realizar Pedido
+          </ReactWhatsapp>
+      
+      </div>
       <Footer/>
       <Menu />
     </>

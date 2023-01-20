@@ -1,20 +1,4 @@
-.main-car{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.img-card-car{
-    display: none;
-}
-.container-carrito{
-    width: 600px;
-    margin: 2%;
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 /* P CAR CARD */
 .p-car-container{
     position: relative;
@@ -24,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-cream);
+    background-color: #f5e580;
     border-radius: 5px;
 }
 /* IMG CAR */
@@ -123,7 +107,7 @@
     margin: 5% 10% 0%;
     padding: 2px 0px;
     font-size: px14;
-    background-color: white;
+    background-color: #f5e580;
     border: 2px solid black;
     border-radius: 7px;
     transition: ease-in-out .2s;
@@ -198,4 +182,157 @@
 }
 
 
+ */
 
+ .global {
+    max-width: 600px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: var(--colorNav);
+  }
+  
+  .containerCart {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 100%;
+    place-items: center;
+  }
+  
+  .inCart {
+    width: 90%;
+    height: auto;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: var(--colorText);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .delete {
+    align-self: flex-start;
+  }
+  
+  .icon {
+    font-size: clamp(20px, 5vw, 30px);
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  .icon:hover {
+    color: var(--colorGlobal);
+    transform: scale(0.9);
+    transition: all 0.5s;
+  }
+  
+  .textContainer {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .imageCart {
+    width: 30%;
+  }
+  
+  .textCart {
+    margin: 0;
+    font-size: clamp(15px, 5vw, 25px);
+    color: var(--colorGlobal);
+  }
+  
+  .inCart > .imageCart img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nameCart {
+    font-size: clamp(20px, 5vw, 30px);
+    text-align: left;
+    margin: 0;
+  }
+  
+  .quatity {
+    width: 20%;
+    height: 30px;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--colorFooter);
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .quatity i {
+    font-size: clamp(15px, 5vw, 30px);
+    cursor: pointer;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  .quatity i:hover {
+    color: var(--colorGlobal);
+    transform: scale(0.8);
+    transition: all 0.3s;
+  }
+  
+  .amount {
+    text-align: right;
+    color: var(--colorGlobal);
+  }
+  
+  .amount > h2 {
+    padding: 0 10px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .wp {
+    width: calc(100% - 30px);
+    margin: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--colorGlobal);
+    font-size: clamp(22px, 5vw, 28px);
+    background-color: #f5df5c;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .wp.oculto{
+    display: none;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .global {
+      margin: auto;
+    }
+  
+    .wp {
+      cursor: pointer;
+      transition: all 0.5s;
+    }
+    .wp:hover {
+      background-color: var(--colorText);
+      transform: scale(0.95);
+      transition: all 0.5s;
+      font-size: 32px;
+      color: var(--colorFooter);
+    }
+  }

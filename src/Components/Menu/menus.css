@@ -42,10 +42,12 @@
 .Cabecera-ul {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .Cabecera-li {
+  justify-content: center;
+  align-items: center;
   margin: 0 1rem;
   list-style: none;
 }
@@ -71,7 +73,7 @@
     background-color: transparent;
   }
 
-  .Back:hover{
+  .Back:hover {
     background-color: #fff;
     transform: scale(1.4);
   }
@@ -113,7 +115,7 @@
     border-radius: 20px;
   }
 
-  .Cabecera-li:hover{
+  .Cabecera-li:hover {
     background-color: #fff;
     transform: scale(1.2);
   }
@@ -125,77 +127,98 @@
   }
 
   .Cabecera-li > .href:hover {
-    color:#f3d422
+    color: #f3d422;
   }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
- 
-  .Cabecera-ul{
-    top:260px;
-    margin-left:20%;
+@media screen and (min-width: 700px) {
+  .Cabecera-ul {
+    top: 240px;
+    z-index: 4;
+    left: 0;
+    right: 120px;
+  
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .Cabecera-ul {
+    top: 240px;
+    z-index: 4;
+    left: 0;
+    right: 0;
+  
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+
+  .Cabecera-li {
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+  }
+
+  .Cabecera-li {
+    list-style: none;
+    background-color: #f5df5c;
+    padding: 0px 20px;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  .Cabecera-li > .href {
+    font-size: 20px;
+    color: black;
+  }
+
+  .Cabecera-li:hover {
+    background-color: rgb(255, 236, 161);
+    transform: scale(1.2);
+  }
+
+  .Back {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .menu {
+    display: none;
+  }
+  .Cabecera-ul {
+    top: 180px;
+    margin-left: 20%;
     z-index: 4;
     position: absolute;
   }
- 
- 
-.Cabecera-li {
-  list-style: none;
-  background-color: #f5df5c;
-  padding: 5px 20px;
-  justify-content: center;
-  border-radius: 20px;
-}
- 
-.Cabecera-li > .href {
-  font-size: 24px;
-  color: black;
-}
 
-.Cabecera-li:hover{
-  background-color: rgb(255, 236, 161);
-  transform: scale(1.2);
-} 
+  .Cabecera-li {
+    list-style: none;
+    background-color: #f5df5c;
+    padding: 1px 15px;
+    justify-content: center;
+    border-radius: 20px;
+  }
 
-.Back {
+  .Cabecera-li > .href {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: black;
+  }
+
+  .Cabecera-li:hover {
+    background-color: rgb(255, 236, 161);
+    transform: scale(1.2);
+  }
+
+  .Back {
     display: none;
   }
-  
 }
-
-@media (min-width: 576px) and (max-width: 991.98px){
-  .menu {
-    display:none
-   }
-   .Cabecera-ul{
-     top:180px;
-     margin-left:20%;
-     z-index: 4;
-     position: absolute;
-   }
-  
-  
- .Cabecera-li {
-   list-style: none;
-   background-color: #f5df5c;
-   padding: 1px 15px;
-   justify-content: center;
-   border-radius: 20px;
- }
-  
- .Cabecera-li > .href {
-   font-size: 15px;
-   font-family: 'Roboto';
-   color: black;
- }
- 
- .Cabecera-li:hover{
-   background-color: rgb(255, 236, 161);
-   transform: scale(1.2);
- } 
- 
- .Back {
-     display: none;
-   }
-}
-

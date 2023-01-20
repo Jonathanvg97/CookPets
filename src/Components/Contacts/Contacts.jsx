@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import './contacts.css'
+import Footer from '../Footer/Footer'
 
 
 const Contactanos = () => {
@@ -17,7 +18,9 @@ const Contactanos = () => {
         console.log(data);
     }
 
-    return <div>
+    return (
+    <>
+    <div>
         <h1 className="Form">Formulario</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div>
@@ -62,7 +65,8 @@ const Contactanos = () => {
             <input type="submit" value="Enviar" />
         </form>
     </div>
-}
+    </>
+)}
 
 
 

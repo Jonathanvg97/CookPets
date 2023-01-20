@@ -6,6 +6,7 @@ export const products = [
   {
     id: "01",
     title: "Tortas",
+    subtitle:"Torta",
     price: 7500,
     url:"https://drive.google.com/uc?export=view&id=1_PNYDBzdcIenaLVjTRPIYywL2b6tVVB2",
     category: "Tortas",
@@ -17,6 +18,7 @@ export const products = [
   {
     id: "02",
     title: "Tortas 2",
+    subtitle:"Torta",
     price: 9500,
     url:"https://drive.google.com/uc?export=view&id=1_PNYDBzdcIenaLVjTRPIYywL2b6tVVB2",
     category: "Tortas",
@@ -28,6 +30,7 @@ export const products = [
   {
     id: "03",
     title: "Tortas 3",
+    subtitle:"Torta",
     price: 11000,
     url:"https://drive.google.com/uc?export=view&id=1_PNYDBzdcIenaLVjTRPIYywL2b6tVVB2",
     category: "Tortas",

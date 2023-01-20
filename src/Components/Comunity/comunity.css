@@ -1,51 +1,104 @@
- .PrincipalC{
+@media (min-width: 1600px) {
+  div.containerTotal {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+
+  .Slogan {
+    font-size: 15px;
+    justify-content: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-family: "Roboto";
+    padding: 0px 20px;
+  }
+
+  img.d-block.w-100.images {
+    height: 420px;
+    width: 800px;
+  }
+
+  .carousel-control-prev {
+    left: 20px;
+  }
+
+  .carousel-control-next {
+    right: 20px;
+  }
+
+  .PrincipalC {
+    margin-top: 100px;
+    text-align: center;
+  }
 }
 
-.Slogan{
-    font-size:15px;
-    justify-content:center;
-    text-align:center;
-    margin-top:10px;
-    font-family:"Roboto";
-    padding:0px 20px
+@media (min-width: 1020px) {
+  .PrincipalC {
+    text-align: center;
+    margin: 70px 0 20px;
+  }
+
+  .Slogan {
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto";
+    padding: 0px 20px;
+  }
+
+  img.d-block.w-100.images {
+    transform: scale(1);
+    height: 400px;
+    width: 300px;
+  }
+
+  .carousel-control-prev {
+    left: 20px;
+  }
+
+  .carousel-control-next {
+    right: 20px;
+  }
+
+  .PrincipalC {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .Slogan {
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Roboto";
+    padding: 10px 85px;
+  }
+
+  div.containerTotal {
+    display: grid;
+    grid-template-columns: 50% 45%;
+  }
+
+  div.container-der {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0 30px 10px;
+  }
 }
 
-@media all and (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 576px) and (max-width: 900px) {
+  .PrincipalC {
+    margin-top: 100px;
+    text-align: center;
+  }
 
-    .PrincipalC{
-        margin-top:100px;
-        text-align: center;
-    }
-
-    
-.Slogan{
-    font-size:25px;
-    justify-content:center;
-    text-align:center;
-    margin-top:10px;
-    font-family:"Roboto";
-    padding:10px 85px
+  .Slogan {
+    font-size: 22px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    font-family: "Roboto";
+    padding: 30px 85px;
+  }
 }
-}
-
-@media (min-width: 576px) and (max-width: 991.98px){
-    
-    .PrincipalC{
-        margin-top:100px;
-        text-align: center;
-    }
-
-    
-.Slogan{
-    font-size:22px;
-    justify-content:center;
-    text-align:center;
-    margin-top:60px;
-    font-family:"Roboto";
-    padding:30px 85px
-}
-}
-
-
